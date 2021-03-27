@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100vw;
+   height: 100vh;
+ background: blueviolet
+}
+
+#titulo{
+    width: 100%;
+    height: 30%;
+    background: powderblue;
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cuerpo{
+    width: 100%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+
+#footer {
+    width: 100%;
+    height: 20%;
+    background: rgb(160, 253, 160) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo h1 {
+ font-size: 5vw;
+ color: rgb(26, 50, 156);    
+ font-family: 'Train One', cursive;
+}
+
+#titulo img {
+    width: 150px;
+    height: 150px;
+    animation-name: spinning-circle;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+a {
+    font-size: 5vw;
+    font-family: 'Righteous', cursive;
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+}
+
+.Botones {
+    width: 30%;
+    height:100%;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.Botones button {
+    width: 100%;    
+    height: 25%;
+    background-color: rgb(153, 250, 245);
+    font-size: 2vw;
+    font-family: 'Cairo', sans-serif;
+}
+
+.Contenido {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    color: rgb(28, 22, 61);
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+}
+
+.xd {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 40px;
+}
+
+@keyframes spinning-circle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
